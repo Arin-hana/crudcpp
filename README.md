@@ -3,6 +3,6 @@
 [jpbarrette | curlpp](https://curlpp.org)  
   
 complie with cmake or something idk  
-i use gcc  
+i use clang   
   
 Arin Hanabi
