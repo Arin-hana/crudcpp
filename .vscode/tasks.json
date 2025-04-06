@@ -8,6 +8,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/*.cpp",
+                "-I",
+                "C:\\vcpkg\\installed\\x64-windows\\include",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
