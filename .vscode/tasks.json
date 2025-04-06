@@ -10,6 +10,8 @@
                 "${workspaceFolder}/*.cpp",
                 "-I",
                 "C:\\vcpkg\\installed\\x64-windows\\include",
+                "-L",
+                "C:\\vcpkg\\installed\\x64-windows\\lib",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
