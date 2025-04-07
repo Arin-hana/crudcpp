@@ -1,6 +1,6 @@
 #### Requirements :  
 [Nlohmann | json](https://json.nlohmann.me)  
-[jpbarrette | curlpp](https://www.curlpp.org)  
+[libcurl](https://www.curl.se)  
   
 complie with cmake or something idk  
 i use clang   

@@ -3,15 +3,16 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/*.cpp",
                 "-I",
-                "C:\\vcpkg\\installed\\x64-windows\\include",
+                "${workspaceFolder}/vcpkg_installed/x64-mingw-static/include",
                 "-L",
-                "C:\\vcpkg\\installed\\x64-windows\\lib",
+                "${workspaceFolder}/vcpkg_installed/x64-mingw-static/lib",
+                "-lcurl", "-lcrypt32", "-lsecur32", "-lws2_32", "-lbcrypt", "-lz", "-lssl", "-lcrypto",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
