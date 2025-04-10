@@ -1,4 +1,9 @@
 #include <string>
+#include <iostream>
+#include <fstream>
+#include <vector>
 void sort(std::string table[][4], int rowsize, int column);
 
-size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp);
+std::string get_row_names();
+
+std::vector<std::vector<std::string>> parse_j(std::string json_str);
