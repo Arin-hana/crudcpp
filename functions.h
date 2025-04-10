@@ -2,7 +2,9 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-void sort(std::string table[][4], int rowsize, int column);
+#include <algorithm>
+#include <regex>
+std::vector<std::vector<std::string>> sort(std::vector<std::vector<std::string>> &parsed,int column);
 
 std::string get_row_names();
 
