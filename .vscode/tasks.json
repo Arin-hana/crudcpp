@@ -7,12 +7,13 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}/*.cpp",
+                "${workspaceFolder}\\*.cpp",
                 "-I",
-                "${workspaceFolder}/vcpkg_installed/x64-mingw-static/include",
+                "${workspaceFolder}\\vcpkg_installed\\x64-mingw-static\\include",
                 "-L",
-                "${workspaceFolder}/vcpkg_installed/x64-mingw-static/lib",
-                "-lcurl", "-lcrypt32", "-lsecur32", "-lws2_32", "-lbcrypt", "-lz", "-lssl", "-lcrypto",
+                "${workspaceFolder}\\vcpkg_installed\\x64-mingw-static\\lib",
+                "-lcurl", "-lcrypt32", "-lsecur32", "-lws2_32", "-lbcrypt", "-lz", "-lssl", "-lcrypto", "-lncurses",
+                "-DNCURSES_STATIC",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
